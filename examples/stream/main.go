@@ -13,8 +13,8 @@ func printOrderBook(c *streaming.Conn) {
 }
 
 func main() {
-	keyID := "key here"
-	keySecret := "key secret here"
+	keyID := "cnz2yjswbv3jd"
+	keySecret := "0hydMZDb9HRR3Qq-iqALwZtXLkbLR4fWxtDZvkB9h4I"
 
 	c, err := streaming.Dial(keyID, keySecret, "XBTZAR", streaming.WithConnectCallback(printOrderBook))
 	if err != nil {
